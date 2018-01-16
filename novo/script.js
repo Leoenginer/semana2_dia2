@@ -4,7 +4,7 @@ function ocultar(classe){
 	console.log(imgs);
 
 	for(let img of imgs){
-		img.style.display = 'none';
+		img.style.transform = 'rotateY(365deg)';
 	}
 }
 // if(img.style.display == )
