@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+img{
+	width: 30%;
+	margin: 1%;
+	border-radius: 30px;
+}
+button:hover{
+	background-color: white;
+	color: black;	
+}
+button{
+	margin: 10px;
+	border: 2px;
+	padding: 10px 20px;
+	color: cyan;
+	font-size: 20px;
+	width: 30%;
+	background-color: #000;
+	border-radius: 10px;
+}

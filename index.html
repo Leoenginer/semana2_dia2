@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			section{
+				display: flex;
+			}
+			div{
+				border: 1px solid #aaa;
+				margin: 0 10px;
+				width: 200px;
+				height: 160px;
+				border-radius: 10px;
+				text-align: center;
+				color: #aaa;
+				font-size: 80px;
+				padding-top: 40px;
+				background-color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+		<div id="div1" onclick="pix('#div1')"></div>
+		<div id="div2" onclick="pix2('#div2')"></div>
+		<div id="div3" onclick="pix3('#div3')"></div>
+		<div id="div4" onclick="pix4('#div4')"></div>
+		<div id="div5" onclick="pix5('#div5')"></div>		
+		</section>
+
+		<script type="text/javascript">
+			let div1 = document.querySelector('#div1');
+			let div2 = document.querySelector('#div2');
+			let div3 = document.querySelector('#div3');
+			let div4 = document.querySelector('#div4');
+			let div5 = document.querySelector('#div5');
+			
+			function exibirNumero(seletor){
+				let div = document.querySelector(seletor);
+				div.style.backgroundColor = 'white';
+			}
+
+			div1.innerText = Math.round(Math.random() * 60);
+			div2.innerText = Math.round(Math.random() * 60);
+			div3.innerText = Math.round(Math.random() * 60);
+			div4.innerText = Math.round(Math.random() * 60);
+			div5.innerText = Math.round(Math.random() * 60);
+		</script>
+	</body>
+</html>
